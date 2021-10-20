@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "jwtSecret": "mern",
+  "mongoUri": "mongodb+srv://vitaly:12341234@cluster0.dml9d.mongodb.net/app?retryWrites=true&w=majority"
+}
