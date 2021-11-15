@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vitaly Borisov <vbshmit@gamil.com>",
@@ -16,10 +18,13 @@
     "express": "^4.17.1",
     "express-validator": "^6.13.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.11"
+    "mongoose": "^6.0.11",
+    "shortid": "^2.2.16"
   },
   "devDependencies": {
     "concurrently": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.27.0",
     "nodemon": "^2.0.14"
   }
 }
